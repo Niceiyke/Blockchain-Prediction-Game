@@ -60,14 +60,14 @@ contract PredictionMarket {
     gameFinished = true;
   }
 
-function pausePrediction()external{
+  function pausePrediction()external{
   require(msg.sender==bookie, 'Your not the bookie');
   pause= true;
-}
+  }
 
-function unPausePrediction()external{
+  function unPausePrediction()external{
   require(msg.sender==bookie, 'Your not the bookie');
   pause= false;
-}
+  }
   
 }
